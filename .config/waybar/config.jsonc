@@ -5,11 +5,11 @@
   // "width": 1280, // Waybar width
   "spacing": 5, // Gaps between modules (5px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces", "wlr/taskbar", "hyprland/submap"],
+  "modules-left": ["wlr/workspaces", "wlr/taskbar", "hyprland/submap"],
   "modules-center": [],
   "modules-right": ["pulseaudio", "clock", "battery", "cpu", "tray"],
   // Modules configuration
-  "hyprland/workspaces": {
+  "wlr/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
