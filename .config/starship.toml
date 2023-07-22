@@ -21,6 +21,13 @@ style = "bg:none fg:lavender"
 truncation_length = 3
 truncate_to_repo=false
 
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+".config" = ""
+
 # palette tables should be last in the config ⚓️
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
