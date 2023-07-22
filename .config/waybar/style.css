@@ -54,10 +54,10 @@ button,
   border: 3px solid #1e1e2e;
 }
 
-button:hover {
+#button:not(.active):hover {
   box-shadow: none;
   text-shadow: none;
-  color: #010940;
+  color: #1e1e2e;
   background: linear-gradient(
     45deg,
     rgba(148, 226, 213, 0.3),
