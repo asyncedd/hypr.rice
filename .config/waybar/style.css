@@ -68,37 +68,30 @@ button:not(.active):hover {
   margin-bottom: 0px;
   background: #1e1e2e;
   border-radius: 8px;
-  border: solid 0px #f4d9e1;
   transition: background 0.3s;
 }
 
 #pulseaudio {
-  background: #89dceb;
-  color: #1e1e2e;
+  color: #89dceb;
+  background: #1e1e2e;
 }
 
 #clock {
-  background: #f9e2af;
-  color: #1e1e2e;
+  color: #f9e2af;
+  background: #1e1e2e;
 }
 
 #battery {
-  background: #b5e8e0;
-  color: #1e1e2e;
+  color: #b5e8e0;
+  background: #1e1e2e;
 }
 
 #cpu {
-  background: #b4befe;
-  color: #1e1e2e;
-}
-
-#battery.charging,
-#battery.plugged {
-  background-color: #b5e8e0;
+  color: #b4befe;
+  background: #1e1e2e;
 }
 
 #battery.critical:not(.charging) {
-  background-color: #b5e8e0;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -108,7 +101,6 @@ button:not(.active):hover {
 
 @keyframes blink {
   to {
-    background-color: #bf616a;
-    color: #b5e8e0;
+    color: #bf616a;
   }
 }
