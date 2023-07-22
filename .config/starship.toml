@@ -11,7 +11,7 @@ vimcmd_symbol = "[❮](green)"
 
 [cmd_duration]
 min_time = 1
-format = "[]($style)[[神](bg:lavender fg:base bold)$duration](bg:lavender fg:base)[ ]($style)"
+format = "[]($style)[[ ](bg:lavender fg:base bold)$duration](bg:lavender fg:base)[ ]($style)"
 disabled = false
 style = "bg:none fg:lavender"
 
