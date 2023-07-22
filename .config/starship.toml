@@ -1,16 +1,25 @@
 # Sets user-defined palette
 palette = "catppuccin_mocha"
 
+right_format = """$git_status$cmd_duration"""
+
 [character]
 # Note the use of Catppuccin color 'maroon'
 success_symbol = "[[❯](green) ❯](maroon)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
+[cmd_duration]
+min_time = 1
+format = "[]($style)[[神](bg:lavender fg:base bold)$duration](bg:lavender fg:base)[ ]($style)"
+disabled = false
+style = "bg:none fg:lavender"
+
 [directory]
-truncation_length = 4
-# Catppuccin 'lavender'
-style = "bold lavender"
+format = "[]($style)[ $path](bg:lavender fg:base )[ ]($style)"
+style = "bg:none fg:lavender"
+truncation_length = 3
+truncate_to_repo=false
 
 # palette tables should be last in the config ⚓️
 [palettes.catppuccin_macchiato]
