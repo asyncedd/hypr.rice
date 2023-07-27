@@ -5,7 +5,7 @@
   // "width": 1280, // Waybar width
   "spacing": 5, // Gaps between modules (5px)
   // Choose the order of the modules
-  "modules-left": ["wlr/workspaces", "wlr/taskbar", "hyprland/submap"],
+  "modules-left": ["wlr/workspaces"],
   "modules-center": [],
   "modules-right": ["pulseaudio", "clock", "battery", "cpu", "tray"],
   // Modules configuration
@@ -26,14 +26,6 @@
       "focused": "",
       "default": ""
     }
-  },
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 20,
-    "tooltip-format": "{title}",
-    "on-click-right": "minimize",
-    "on-click-middle": "close",
-    "on-click": "activate"
   },
   "tray": {
     "spacing": 10
