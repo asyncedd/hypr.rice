@@ -5,9 +5,16 @@
   // "width": 1280, // Waybar width
   "spacing": 5, // Gaps between modules (5px)
   // Choose the order of the modules
-  "modules-left": ["wlr/workspaces"],
+  "modules-left": ["custom/padding", "wlr/workspaces"],
   "modules-center": [],
-  "modules-right": ["pulseaudio", "clock", "battery", "cpu", "tray"],
+  "modules-right": [
+    "pulseaudio",
+    "clock",
+    "battery",
+    "cpu",
+    "tray",
+    "custom/padding"
+  ],
   // Modules configuration
   "wlr/workspaces": {
     "disable-scroll": true,
@@ -26,6 +33,9 @@
       "focused": "",
       "default": ""
     }
+  },
+  "custom/padding": {
+    "format": " "
   },
   "tray": {
     "spacing": 10
