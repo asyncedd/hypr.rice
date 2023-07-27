@@ -7,5 +7,5 @@ My [Hyprland](https://wiki.hyprland.org) dots - my second attempt
 With your favorite AUR helper do: (for eg. yay!)
 
 ```bash
-yay -S hyprland-git waybar-hyprland-git pavucontrol wezterm rofi-lbonn-wayland-git ttf-jetbrains-mono-nerd hyprshot
+yay -S hyprland-git waybar-hyprland-git pavucontrol wezterm rofi-lbonn-wayland-git ttf-jetbrains-mono-nerd hyprshot dunst
 ```
