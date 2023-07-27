@@ -1,47 +1,45 @@
+@import "mocha.css";
+
 * {
   border: none;
   font-family: JetBrains Mono;
 }
 
 window#waybar {
-  background: none;
+  background: @base;
 }
 
 button,
 #taskbar,
 #workspaces {
   transition: background 0.5s ease, color 0.5s ease;
-  background: #1e1e2e;
-  color: rgba(180, 190, 254, 0.6);
-
-  /* Rounded outer sides */
+  background: @base;
+  color: rgba(180, 190, 254, 0.6); /* Rounded outer sides */
   border-radius: 10px;
-  border: 3px solid #1e1e2e;
+  border: 3px solid @base;
 }
 
 #taskbar button.active,
 #workspaces button.active {
   box-shadow: none;
-  color: #1e1e2e;
+  color: @base;
   text-shadow: none;
   background: linear-gradient(
     45deg,
-    #94e2d5,
-    #89dceb,
-    #74c7ec,
-    #89b4fa,
-    #b4befe
-  );
-
-  /* Rounded outer sides */
+    @teal,
+    @sky,
+    @sapphire,
+    @blue,
+    @lavender
+  ); /* Rounded outer sides */
   border-radius: 10px;
-  border: 3px solid #1e1e2e;
+  border: 3px solid @base;
 }
 
 button:not(.active):hover {
   box-shadow: none;
   text-shadow: none;
-  color: #1e1e2e;
+  color: @base;
   background: linear-gradient(
     45deg,
     rgba(148, 226, 213, 0.3),
@@ -49,46 +47,46 @@ button:not(.active):hover {
     rgba(116, 199, 236, 0.3),
     rgba(137, 180, 250, 0.3),
     rgba(180, 190, 254, 0.3)
-  );
-
-  /* Rounded outer sides */
+  ); /* Rounded outer sides */
   border-radius: 10px;
   border: 3px solid #1e1e2e;
 }
 
 #clock,
+#tray,
+#network,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock,
+#custom-power,
 #battery,
 #pulseaudio,
 #cpu,
 #network {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
+  background-color: @base;
+  padding: 3px 3px 3px 3px;
+  padding-bottom: 0px;
+  margin: 3px 3px 3px 3px;
   margin-bottom: 0px;
-  background: #1e1e2e;
-  border-radius: 8px;
-  transition: background 0.3s;
+  border-radius: 1rem;
 }
 
 #pulseaudio {
-  color: #89dceb;
-  background: #1e1e2e;
+  color: @sky;
 }
 
 #clock {
-  color: #f9e2af;
-  background: #1e1e2e;
+  color: @yellow;
 }
 
 #battery {
-  color: #b5e8e0;
-  background: #1e1e2e;
+  color: @teal;
 }
 
 #cpu {
-  color: #b4befe;
-  background: #1e1e2e;
+  color: @lavender;
 }
 
 #battery.critical:not(.charging) {
@@ -101,6 +99,6 @@ button:not(.active):hover {
 
 @keyframes blink {
   to {
-    color: #bf616a;
+    color: @red;
   }
 }
