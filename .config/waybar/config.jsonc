@@ -9,11 +9,11 @@
   "modules-center": [],
   "modules-right": [
     "pulseaudio",
-    "clock",
     "battery",
     "cpu",
     "tray",
-    "custom/padding"
+    "custom/padding",
+    "clock"
   ],
   // Modules configuration
   "wlr/workspaces": {
