@@ -71,6 +71,13 @@ button,
   margin-right: 3px;
 }
 
+#mpris {
+  background: @surface0;
+  padding: 1px 5px 1px 5px;
+  color: @red;
+  border-radius: 10px;
+}
+
 #clock,
 #tray,
 #network,
