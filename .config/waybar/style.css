@@ -6,7 +6,7 @@
 }
 
 window#waybar {
-  background: @base;
+  background: rgba(30, 30, 46, 0.5);
 }
 
 button,
@@ -14,10 +14,11 @@ button,
 #workspaces {
   transition: background 0.5s ease, color 0.5s ease, padding-left 0.5s ease-in,
     padding-right 0.5s ease-in;
-  background: @base;
+  /* background: @base; */
   color: rgba(180, 190, 254, 0.6); /* Rounded outer sides */
   border-radius: 10px;
-  border: 3px solid @base;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 #workspaces button:not(.active) {
@@ -47,7 +48,8 @@ button,
   border-radius: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  border: 3px solid @base;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 #workspaces button:not(.active):hover {
@@ -65,7 +67,8 @@ button,
   border-radius: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 3px solid #1e1e2e;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 #clock,
