@@ -1,0 +1,7 @@
+Config(
+  // The vertical position, works the same as `x`
+  y: Fraction(0.1),
+
+  // The width of the runner
+  width: Absolute(800),
+)

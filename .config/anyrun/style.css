@@ -1,0 +1,30 @@
+@import "mocha.css";
+
+* {
+  transition: 200ms ease;
+  font-family: JetBrains Mono, monospace;
+  font-size: 1.3rem;
+}
+
+#window,
+#match,
+#entry,
+#plugin,
+#main {
+  background: transparent;
+}
+
+#match:selected {
+  background: rgba(180, 190, 254, 0.7);
+}
+
+#match {
+  padding: 3px;
+  border-radius: 5px;
+}
+
+box#main {
+  background: @base;
+  border-radius: 24px;
+  padding: 8px;
+}
