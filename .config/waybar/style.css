@@ -12,11 +12,23 @@ window#waybar {
 button,
 #taskbar,
 #workspaces {
-  transition: background 0.5s ease, color 0.5s ease;
+  transition: background 0.5s ease, color 0.5s ease, padding-left 0.5s ease-in,
+    padding-right 0.5s ease-in;
   background: @base;
   color: rgba(180, 190, 254, 0.6); /* Rounded outer sides */
   border-radius: 10px;
   border: 3px solid @base;
+}
+
+#workspaces button:not(.active) {
+  background: linear-gradient(
+    45deg,
+    rgba(148, 226, 213, 0.1),
+    rgba(137, 220, 235, 0.1),
+    rgba(116, 199, 236, 0.1),
+    rgba(137, 180, 250, 0.1),
+    rgba(180, 190, 254, 0.1)
+  ); /* Rounded outer sides */
 }
 
 #taskbar button.active,
@@ -33,10 +45,12 @@ button,
     @lavender
   ); /* Rounded outer sides */
   border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 3px solid @base;
 }
 
-button:not(.active):hover {
+#workspaces button:not(.active):hover {
   box-shadow: none;
   text-shadow: none;
   color: @base;
@@ -49,6 +63,8 @@ button:not(.active):hover {
     rgba(180, 190, 254, 0.3)
   ); /* Rounded outer sides */
   border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   border: 3px solid #1e1e2e;
 }
 

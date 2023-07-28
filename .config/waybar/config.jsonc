@@ -20,19 +20,9 @@
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{icon}",
+    "format": "",
     "on-click": "activate",
-    "disable-scroll": true,
-    "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "urgent": "",
-      "focused": "",
-      "default": ""
-    }
+    "disable-scroll": true
   },
   "custom/padding": {
     "format": " "
