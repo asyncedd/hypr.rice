@@ -6,7 +6,7 @@
   "spacing": 5, // Gaps between modules (5px)
   // Choose the order of the modules
   "modules-left": ["custom/padding", "wlr/workspaces"],
-  "modules-center": [],
+  "modules-center": ["mpris"],
   "modules-right": [
     "pulseaudio",
     "battery",
@@ -69,16 +69,16 @@
     },
     "on-click": "pavucontrol"
   },
-  "custom/media": {
-    "format": "{icon} {}",
-    "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
-      "spotify": "",
-      "default": ""
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "player-icons": {
+      "default": "🎵",
+      "mpv": "🎵"
     },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    "status-icons": {
+      "paused": "⏸"
+    }
+    // "ignored-players": ["firefox"]
   }
 }
