@@ -83,6 +83,7 @@ button,
 #battery,
 #pulseaudio,
 #cpu,
+#tray,
 #network {
   background-color: @base;
   padding: 3px 3px 3px 3px;
