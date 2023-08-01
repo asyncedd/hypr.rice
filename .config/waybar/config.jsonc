@@ -6,7 +6,8 @@
   "spacing": 5, // Gaps between modules (5px)
   // Choose the order of the modules
   "modules-left": ["custom/padding", "wlr/workspaces"],
-  "modules-center": ["mpris"],
+  // "modules-center": ["mpris"],
+  "modules-center": [],
   "modules-right": [
     "pulseaudio",
     "battery",
