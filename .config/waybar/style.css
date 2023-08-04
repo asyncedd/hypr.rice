@@ -3,6 +3,8 @@
 * {
   border: none;
   font-family: JetBrains Mono;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 window#waybar {
@@ -96,7 +98,7 @@ button,
   padding-bottom: 0px;
   margin: 3px 3px 3px 3px;
   margin-bottom: 0px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 #pulseaudio {
