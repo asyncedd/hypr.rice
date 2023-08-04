@@ -3,8 +3,8 @@
 * {
   border: none;
   font-family: JetBrains Mono;
-  padding-left: 5px;
-  padding-right: 5px;
+  /* padding-left: 5px; */
+  /* padding-right: 5px; */
 }
 
 window#waybar {

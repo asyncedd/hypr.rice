@@ -8,7 +8,14 @@
   "modules-left": ["custom/padding", "wlr/workspaces"],
   // "modules-center": ["mpris"],
   "modules-center": [],
-  "modules-right": ["pulseaudio", "battery", "cpu", "tray", "clock"],
+  "modules-right": [
+    "pulseaudio",
+    "battery",
+    "cpu",
+    "tray",
+    "clock",
+    "custom/padding"
+  ],
   // Modules configuration
   "wlr/workspaces": {
     "disable-scroll": true,
